@@ -1,0 +1,20 @@
+EXERCISES:
+
+1.  Ask the user to input a character then prints out
+    both the character and it’s ASCII code.
+
+2.  Write a for loop that prints every other number from 0 to 20.
+
+3.  Horses cost $10, pigs cost $3, and rabbits are only $0.50.
+    A farmer buys 100 animals for $100, How many of each animal did he buy?
+
+4.  How many ways can you arrange 6 different books, left to right, on a shelf?
+    (solution 720)
+
+5.  As electronic stopwatches become cheaper and more accurate, we will no doubt
+    be deluged with impossibly accurate measurements of time.
+    Write a program that takes as input a time period given in seconds, and
+    outputs the number of hours, minutes and seconds it represents.
+    For example,
+        Number of seconds: 3662
+        Hours: 1 Minutes: 1 Seconds: 2
