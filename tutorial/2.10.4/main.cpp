@@ -10,11 +10,11 @@ int getHeight()
     return h;
 }
 
- float calculateHeight(int height)
+float calculateHeight(int height)
 {
     for (int i(0); i <= 5; i++)
     {
-        float dist = ( myConstants::gravity  * static_cast<int>(pow(i, 2)) ) / 2;
+        float dist = ( myConstants::gravity * static_cast<float>(pow(i, 2)) ) / 2;
         float current_dist = height - dist;
         // check wheter we are going under the ground
         if (current_dist < 0)
