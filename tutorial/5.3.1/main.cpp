@@ -10,7 +10,7 @@ double calculate(int x, int y, char oper) {
             return x - y;
         break;
         case '/':
-            return x / y;
+            return static_cast<double>(x) / y;
         break;
         case '*':
             return x * y;
@@ -33,7 +33,8 @@ int main() {
     char oper;
     std::cin >> oper;
 
-    std::cout << calculate(x, y, oper) << std::endl;
+    std::cout << x << " " << oper << " " << y << " = " <<
+        calculate(x, y, oper) << std::endl;
 
     return 0;
 }
