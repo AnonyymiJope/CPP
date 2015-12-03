@@ -12,64 +12,62 @@ enum class Animal {
 
 std::string getAnimalName (Animal animal) {
     switch (animal) {
-        case 'Animal::PIG':
+        case Animal::PIG:
             return "pig";
         break;
-        case 'Animal::CHICKEN':
+        case Animal::CHICKEN:
             return "chicken";
         break;
-        case 'Animal::GOAT':
-            return "goat;
+        case Animal::GOAT:
+            return "goat";
         break;
-        case 'Animal::CAT':
+        case Animal::CAT:
             return "cat";
         break;
-        case 'Animal::DOG':
+        case Animal::DOG:
             return "dog";
         break;
-        case 'Animal::OSTRICH':
+        case Animal::OSTRICH:
             return "ostrich";
         break;
         default:
-            std::cout << "ERROR\n";
-            exit(0);
-        break;
+            return "unknown";
     }
 }
 
-int printNumberOfLegs (std::string getAnimalName) {
+void printNumberOfLegs (Animal animal) {
+    std::cout << "A " << getAnimalName(animal) << " has ";
+
     switch (animal) {
-        case 'pig':
-            return 4;
+        case Animal::PIG:
+            std::cout << "4";
         break;
-        case 'chicken':
-            return 2;
+        case Animal::CHICKEN:
+            std::cout << "2";
         break;
-        case 'goat':
-            return 4;
+        case Animal::GOAT:
+            std::cout << "4";
         break;
-        case 'cat':
-            return 4;
+        case Animal::CAT:
+            std::cout << "4";
         break;
-        case 'dog':
-            return 4;
+        case Animal::DOG:
+            std::cout << "4";
         break;
-        case 'ostrich':
-            return 2;
+        case Animal::OSTRICH:
+            std::cout << "2";
         break;
         default:
-            std::cout << "ERROR\n";
-            exit(0);
+            std::cout << "x";
         break;
     }
+
+    std::cout << " legs." << std::endl;
 }
 
 int main() {
-    Animal cat = Animal::CAT;
-    Animal chicken = Animal::CAT;
-
-    std::cout << "A " << cat << " has " << 
-        printNumberOfLegs(cat) << " legs." << std::endl;
+    printNumberOfLegs(Animal::CAT);
+    printNumberOfLegs(Animal::CHICKEN);
 
     return 0;
 }
