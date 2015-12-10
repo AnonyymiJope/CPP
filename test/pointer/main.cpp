@@ -22,5 +22,23 @@ int main()
     std::cout << "Element 0 has address: " << &array[3] << '\n';
     std::cout << "Element 0 has address: " << &array[4] << '\n';
 
+//------------------------------
+
+    int value1 = 5;
+    const int *ptr1 = &value1;
+    std::cout << *ptr1 << std::endl;
+    std::cout << ptr1 << std::endl;
+
+    value1 = 6;
+    std::cout << *ptr1 << std::endl;
+    std::cout << ptr1 << std::endl;
+
+    // not legal:
+    //*ptr1 = 7;
+    int value2 = 7;
+    ptr1 = &value2;
+    std::cout << *ptr1 << std::endl;
+    std::cout << ptr1 << std::endl;
+
     return 0;
 }
