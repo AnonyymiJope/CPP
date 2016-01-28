@@ -95,10 +95,7 @@ void printCard(const Card &card)
 
 int main ()
 {
-    Card myCard;
-    myCard.rank = CARD_ACE;
-    myCard.suit = SUIT_SPADES;
-    printCard(myCard);
+    std::array<Card, 52> cardDeck;
 
     return 0;
 }
